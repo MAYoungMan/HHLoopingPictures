@@ -1,5 +1,5 @@
 //
-//  PicturesLoop.swift
+//  HHLoopingPictures.swift
 //  LoopingPictures
 //
 //  Created by Sherlock on 2019/5/15.
@@ -32,7 +32,7 @@ protocol PicturesClickDelegate: NSObjectProtocol {
     func clickAtIndex(index: Int)
 }
 
-class PicturesLoop: NSObject {
+class HHLoopingPictures: NSObject {
     
     private var timer: Timer?
     private let cellIDF = "picturesLoopCell"
@@ -59,7 +59,7 @@ class PicturesLoop: NSObject {
     }
     
     deinit {
-        print("PicturesLoop deinit")
+        print("HHLoopingPictures deinit")
     }
     
     // 根据需要动态改变轮播图frame
@@ -137,7 +137,7 @@ class PicturesLoop: NSObject {
     
 }
 
-extension PicturesLoop: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension HHLoopingPictures: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.clickAtIndex(index: indexPath.row % imgSource.count)
     }
@@ -158,7 +158,7 @@ extension PicturesLoop: UICollectionViewDelegate, UICollectionViewDataSource, UI
     
 }
 
-extension PicturesLoop: UIScrollViewDelegate {
+extension HHLoopingPictures: UIScrollViewDelegate {
     
     // 当用户开始拖拽的时候就调用
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

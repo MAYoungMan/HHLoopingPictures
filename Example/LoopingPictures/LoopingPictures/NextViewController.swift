@@ -10,7 +10,7 @@ import UIKit
 
 class NextViewController: UIViewController {
 
-    var picLoop: PicturesLoop?
+    var picLoop: HHLoopingPictures?
     let width = UIScreen.main.bounds.width
     let height = floor(UIScreen.main.bounds.width * 333 / 500)
     
@@ -18,7 +18,7 @@ class NextViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         
-        picLoop = PicturesLoop.init(superView: self.view, frame: CGRect.init(x: 0, y: 100, width: width, height: height), time: 1.0, images: [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "2"),#imageLiteral(resourceName: "3"),#imageLiteral(resourceName: "4"),#imageLiteral(resourceName: "5")])
+        picLoop = HHLoopingPictures.init(superView: self.view, frame: CGRect.init(x: 0, y: 100, width: width, height: height), time: 1.0, images: [#imageLiteral(resourceName: "1"),#imageLiteral(resourceName: "2"),#imageLiteral(resourceName: "3"),#imageLiteral(resourceName: "4"),#imageLiteral(resourceName: "5")])
         picLoop?.delegate = self
         
         let gesLong = UILongPressGestureRecognizer.init(target: self, action: #selector(longPress(ges:)))

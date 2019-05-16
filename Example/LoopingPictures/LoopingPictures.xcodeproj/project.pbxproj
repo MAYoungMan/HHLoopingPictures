@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		382F0359228D510400430929 /* HHLoopingPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382F0358228D510400430929 /* HHLoopingPictures.swift */; };
 		388667F9228AA7F700F94124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388667F8228AA7F700F94124 /* AppDelegate.swift */; };
 		388667FB228AA7F700F94124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388667FA228AA7F700F94124 /* ViewController.swift */; };
 		388667FE228AA7F700F94124 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 388667FC228AA7F700F94124 /* Main.storyboard */; };
 		38866800228AA7F900F94124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388667FF228AA7F900F94124 /* Assets.xcassets */; };
 		38866803228AA7F900F94124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38866801228AA7F900F94124 /* LaunchScreen.storyboard */; };
 		3886680B228AAB7300F94124 /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3886680A228AAB7300F94124 /* Image.xcassets */; };
-		3886680F228C04AF00F94124 /* PicturesLoop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3886680E228C04AF00F94124 /* PicturesLoop.swift */; };
 		38866811228C0DFB00F94124 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38866810228C0DFB00F94124 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		382F0358228D510400430929 /* HHLoopingPictures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHLoopingPictures.swift; sourceTree = "<group>"; };
 		388667F5228AA7F700F94124 /* LoopingPictures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoopingPictures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		388667F8228AA7F700F94124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		388667FA228AA7F700F94124 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +27,6 @@
 		38866802228AA7F900F94124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38866804228AA7F900F94124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3886680A228AAB7300F94124 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
-		3886680E228C04AF00F94124 /* PicturesLoop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesLoop.swift; sourceTree = "<group>"; };
 		38866810228C0DFB00F94124 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		382F0357228D510400430929 /* LoopingPictures */ = {
+			isa = PBXGroup;
+			children = (
+				382F0358228D510400430929 /* HHLoopingPictures.swift */,
+			);
+			path = LoopingPictures;
+			sourceTree = "<group>";
+		};
 		388667EC228AA7F700F94124 = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +68,7 @@
 		388667F7228AA7F700F94124 /* LoopingPictures */ = {
 			isa = PBXGroup;
 			children = (
-				3886680E228C04AF00F94124 /* PicturesLoop.swift */,
+				382F0357228D510400430929 /* LoopingPictures */,
 				388667F8228AA7F700F94124 /* AppDelegate.swift */,
 				388667FA228AA7F700F94124 /* ViewController.swift */,
 				38866810228C0DFB00F94124 /* NextViewController.swift */,
@@ -147,7 +155,7 @@
 			files = (
 				388667FB228AA7F700F94124 /* ViewController.swift in Sources */,
 				38866811228C0DFB00F94124 /* NextViewController.swift in Sources */,
-				3886680F228C04AF00F94124 /* PicturesLoop.swift in Sources */,
+				382F0359228D510400430929 /* HHLoopingPictures.swift in Sources */,
 				388667F9228AA7F700F94124 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5PEWS45E5;
 				INFOPLIST_FILE = LoopingPictures/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W5PEWS45E5;
 				INFOPLIST_FILE = LoopingPictures/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
